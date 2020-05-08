@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript QuizApp</title>
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+    <main>
+      <h1>General Quiz</h1>
+      <button type="button" class="start-quiz show" onclick="startQuiz()">Start Quiz</button>
+       <div class="quiz_container">
+
+        <div class="question-container" id="questionline">
+
+        </div>
+        <div class="question-options">
+          <ul id="ul">
+            <li id="op1" onclick="button(this)"></li>
+            <li id="op2" onclick="button(this)"></li>
+            <li id="op3" onclick="button(this)"></li>
+            <li id="op4" onclick="button(this)"></li>
+          </ul>
+        </div>
+        <div class="result">
+          <div class="next">
+            <button type="button"  onclick="next()" id="btn">Next</button>
+
+          </div>
+          <div class="result-count">
+            Score: <span id="scoreCard">0</span>
+          </div>
+
+        </div>
+
+      </div>
+    </main>
+
+<footer>
+  <div class="media">
+    <a href="https://facebook.com/Sidoo3" class="spacing"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://twitter.com/samuel__abah" class="spacing"><i class="fab fa-twitter"></i></a>
+    <a href="https://instagram.com/samuel__abah" class="spacing"><i class="fab fa-instagram"></i></a>
+  </div>
+  <p>©2020 TechNelly</p>
+</footer>
+
+  <script src="https://kit.fontawesome.com/a4100ca161.js" crossorigin="anonymous"></script>
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
